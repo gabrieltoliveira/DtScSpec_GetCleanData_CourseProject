@@ -1,4 +1,4 @@
-# John Hopkins University - Coursera Data Science Specialization
+# Coursera Data Science Specialization - JHU
 ***
 # Getting and Cleaning Data Course Project
 
