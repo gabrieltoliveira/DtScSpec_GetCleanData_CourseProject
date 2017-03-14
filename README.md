@@ -1,4 +1,5 @@
-# John Hopkins School of Science and Public Health - Coursera Data Science Specialization
+# John Hopkins University - Coursera Data Science Specialization
+***
 # Getting and Cleaning Data Course Project
 
 This is the repository on the Getting and Cleaning Data Course Project, from the John Hopkins School of Science and Public Health Coursera Data Science Specialization.
