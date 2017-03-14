@@ -2,7 +2,7 @@
 ***
 
 # Course Project Code Book
-This is the Code Book for the Coursera Data Science Specialization Getting and Cleaning Data Course Project.
+This is the Code Book for the Tidy Data set created during the Coursera Data Science Specialization Getting and Cleaning Data Course Project.
 
 ## Tidy Data set Code Book
 ### Initial variables:
