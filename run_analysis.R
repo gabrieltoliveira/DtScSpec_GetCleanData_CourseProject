@@ -49,22 +49,19 @@
 # with the average of each variable for each activity and each subject.
 
 
-# Set Working Dir, loading Library
-setwd("C:/Users/Gabriel Oliveira/Dropbox/Pesquisa/DataScienceSpec/")
-setwd("./dev_03_Get_Clean_Data")
+# Setting Working Dir and Loading Libraries
 if (!file.exists("data")) {dir.create("data")}
-install.packages(c("dtplyr", "data.table", "dplyr"))
-library(dtplyr)
-library(data.table)
+install.packages(c("plyr", "dplyr", "data.table"))
+library(plyr)
 library(dplyr)
+library(data.table)
 
-# Download Data File
+# Downloading and Unzipping Data File
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 dest <- "./data/datazip.zip"
 dateDownloaded <- date()
 if (!file.exists(dest)) {download.file(fileUrl, dest)}
 
-# Unzipping Data File
 unzip(dest, list = TRUE) # Listing file to determine which are going to be extracted
 unzip(dest, exdir = "./data", 
       files = c("UCI HAR Dataset/README.txt", 
@@ -88,7 +85,7 @@ head(features)
 activities <- fread("./data/UCI HAR Dataset/activity_labels.txt", sep = " ", col.names = c("ID", "activity"), header = FALSE)
 head(activities)
 
-# Training and Test data sets importing and binding. Each row is composed by the subject, the activity and the respective data.
+# Importing and Binding Training and Test data sets. Each row is composed by the subject, the activity and the respective data.
 train_subject <- fread("./data/UCI HAR Dataset/train/subject_train.txt", header = FALSE)
 train_activity <- fread("./data/UCI HAR Dataset/train/y_train.txt", header = FALSE)
 train_data <- fread("./data/UCI HAR Dataset/train/X_train.txt", col.names = features$feature, header = FALSE)
