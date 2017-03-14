@@ -6,7 +6,7 @@ This is the repository on the Getting and Cleaning Data Course Project, from the
 This README document explains how the main script file (run_analysis.R) works.
 
 ## Premises
-To run the script one should clone this repository and make sure that the R packages `plyr`, `data.table` and `dplyr` are installed.
+To run the script one should only clone this repository.
 
 ## Method
 In order to perform assigned tasks, the script take the following steps:
